@@ -58,7 +58,7 @@ xplane-data-tools-php sector output ; File description
 <?php if($lastGeo != ''): ?>
 <?= $lastGeo ?> <?= Util::dec2Dms($node['geo']) ?> taxiway
 <?php endif; ?>
-<? $lastGeo = Util::dec2Dms($node['geo']); ?>
+<?php $lastGeo = Util::dec2Dms($node['geo']); ?>
 <?php endforeach; ?>
 
 <?php endforeach; ?>
